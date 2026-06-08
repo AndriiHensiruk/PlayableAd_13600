@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>PlayableAd_13600</title>
+  <title>PlayableAd_13600_SP</title>
   <style>
     body, html { 
       margin: 0; padding: 0; 
@@ -151,7 +151,9 @@
       color: #fff;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      white-space: nowrap;
+      white-space: normal;
+      word-wrap: break-word;
+      max-width: 90%;
       filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.8));
       -webkit-text-stroke: 1.5px #000; 
       opacity: 0;
@@ -324,9 +326,9 @@
   </div>
 
   <audio id="bgMusic" src="assets/bg_music.m4a" loop></audio>
-  <audio id="shout1" src="assets/shout1.m4a"></audio>
-  <audio id="shout2" src="assets/shout2.m4a"></audio>
-  <audio id="shout3" src="assets/shout3.m4a"></audio>
+  <audio id="shout1" src="assets/shout1.mp3"></audio>
+  <audio id="shout2" src="assets/shout2.mp3"></audio>
+  <audio id="shout3" src="assets/shout3.mp3"></audio>
   <audio id="finalShout" src="assets/final.m4a"></audio>
   <audio id="buttonSound" src="assets/button.m4a"></audio>
 
@@ -350,9 +352,9 @@
     const buttonSound = document.getElementById('buttonSound');
 
     const subtitleTexts = [
-      "<span class='highlight'>Don't</span> press that button!", 
-      "Wait... <span class='highlight'>no,</span> don't press it!", 
-      "Please... <span class='highlight'>don't</span> press it!" 
+      "<span class='highlight'>¡No presiones</span>  ese botón!", 
+      "Espera...  <span class='highlight'>no</span> , ¡no lo presiones!", 
+      "Por favor... ¡ <span class='highlight'>no lo presiones</span> !" 
     ];
 
     let clickCount = 0; 
@@ -484,7 +486,7 @@
     });
 
     goBtn.addEventListener('click', () => {
-      window.location.href = "https://honeytoon.com/comic-video/teach-me-first?n=1";
+      window.location.href = "https://honeytoon.com/es/comic-video/ensename-primero";
     });
   </script>
 </body>
