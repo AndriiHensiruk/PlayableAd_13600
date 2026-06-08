@@ -391,7 +391,7 @@
     playBtn.addEventListener('click', () => {
       splash.classList.remove('active');
       gameScene.classList.add('active');
-      bgMusic.volume = 0.1;
+      bgMusic.volume = 0.09;
       bgMusic.play().catch(err => console.log("Music autoplay blocked"));
       shouts[0].play().catch(err => console.log("Audio play blocked"));
       showSubtitle(subtitleTexts[0]);
